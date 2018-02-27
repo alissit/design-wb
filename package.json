@@ -7,5 +7,9 @@
   },
   "author": "Alissa Eggleston",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  }
 }
