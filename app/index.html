@@ -17,21 +17,32 @@
 
 </head>
 <body>
-  <header>
-    <img src="assets/images/RN Design.jpg">
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+  	<div class="wrapper">
+  		<div class="">
+  		</div>
+		    <nav class="primary-nav primary-nav--pull-right">
+		      <ul>
+		        <li><a href="#">Home</a></li>
+		        <li><a href="#">Projects</a></li>
+		        <li><a href="#">Testimonials</a></li>
+		        <li><a href="#">Contact</a></li>
+		      </ul>
+		    </nav>
+  	</div>
   </header>
 
 	<div class ="slider-head">
 		<div class="slider-head__slider">
-			<img class="slider-head__image" src="assets/images/slider6.jpg">
+			    <picture>
+				      <source srcset="assets/images/yellow-chairs-2560.jpg 2560w" media="(min-width: 1380px)">
+
+				      <source srcset="assets/images/yellow-chairs-1440.jpg 1440w" media="(min-width: 790px)">
+
+				      <source srcset="assets/images/yellow-chairs-800.jpg 800w" media="(min-width: 390px)">
+
+				      <img srcset="assets/images/yellow-chairs-380.jpg 380w" alt="Yellow chairs, Dan Gold Photography" class="slider-head__image">
+				</picture>
 		</div>
 		  <div class="slider-head__text-content">
 		  	<div class="wrapper">

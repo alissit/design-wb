@@ -341,10 +341,15 @@ template {
   display: none;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 
 	font-family: 'Alegreya Sans', sans-serif;
 	background-color: #8F97A1;
+	margin-right: -5px;
 }
 
 img {
@@ -356,8 +361,7 @@ img {
 
 .slider-head {
 		border-bottom: 10px solid #171E22;
-	
-	position: relative;
+		position: relative;
 
 }
 
@@ -365,6 +369,7 @@ img {
 
 		opacity: .75;
 		display: block;
+
 	}
 
 .slider-head__text-content {
@@ -392,7 +397,7 @@ img {
 		font-weight: 400;
 		font-size: 3.2rem;
 		color: #171E22;
-		text-shadow: 2px 2px 0 rgba(0, 0, 0, .2);
+		text-shadow: 3px 3px 0 rgba(255, 255, 255, .5);
 		
 	}
 
@@ -400,41 +405,37 @@ img {
 
 .slider-head__title {
 
-			font-size: 4.5rem
+			font-size: 6.7rem
 		
 	}
 	}
 
 .slider-head__subtitle {
-		font-weight: 300;
-		font-size: 2rem;
+		font-weight: 400;
+		font-size: 1.6rem;
 		color: #171E22;
 		max-width: 30rem;
+		margin-top: 65px;
 		margin-left: auto;
 		margin-right: auto;
-
-
 	}
 
 @media (min-width: 800px){
 
 .slider-head__subtitle {
-			font-size: 2.5rem
-
-
+			font-size: 4.2rem
 	}
 	}
 
-.slider-head__subtitle__slider {
+.slider-head__slider {
 		margin-right: auto;
 	    margin-left: auto;
-	    max-width: 1200px;
 		}
 
 .secondary {
 
-	background-color: #87A0B2;
-	height: 150px;
+	background-color: rgb(252, 252, 251);
+	height: 100px;
 }
 
 .secondary__description {
@@ -461,10 +462,8 @@ img {
 
 .wrapper {
 
-	position: relative;
 	padding-left: 18px;
 	padding-right: 18px;
-	width: 100%;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -473,3 +472,79 @@ img {
 .page-section {
 	padding: 4.5rem 0;
 }
+
+.site-header {
+
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(252, 252, 251, .3);
+}
+
+.site-header__logo {
+		position: absolute;
+		top: 0;
+		background-color: #97A5B4;
+
+	}
+
+@media (min-width: 800px){
+
+.site-header__logo {
+			position: absolute;
+			top: 0;
+			background-color: #97A5B4;
+			padding: 25px 36px
+
+	}
+	}
+
+.site-header__text {
+		font-weight: 300;
+		font-size: 2.1rem;
+		color: #171E22;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
+	}
+
+@media (min-width: 800px){
+
+.site-header__text {
+			font-weight: 400;
+			font-size: 3.2rem;
+			color: #171E22;
+			text-shadow: 3px 3px 0 rgba(255, 255, 255, .5)
+	}
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+.primary-nav ul::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.primary-nav li {
+		list-style: none;
+		float: left;
+		padding-right: 25px;
+
+	}
+
+.primary-nav--pull-right {
+
+		float: right;
+	}
+
+.primary-nav a {
+		color: white;
+		text-decoration: none;
+		font-weight: 300;
+		font-size: 1.4rem;
+		display: block;
+		padding: 12px 0;
+	}

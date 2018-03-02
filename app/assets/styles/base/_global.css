@@ -1,7 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 
 	font-family: 'Alegreya Sans', sans-serif;
 	background-color: #8F97A1;
+	margin-right: -5px;
 }
 
 img {

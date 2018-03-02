@@ -1,7 +1,7 @@
 .secondary {
 
-	background-color: #87A0B2;
-	height: 150px;
+	background-color: rgb(252, 252, 251);
+	height: 100px;
 
 
 	&__description {
