@@ -18,6 +18,12 @@
 	}
 }
 
+@define-mixin atXLarge {
+	@media (min-width: 1980px){
+		@mixin-content;
+	}
+}
+
 
 @define-mixin clearfix {
 	&::after {

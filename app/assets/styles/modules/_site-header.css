@@ -4,24 +4,13 @@
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-	background-color: rgba(252, 252, 251, .3);
-
-
-	&__logo {
-		position: absolute;
-		top: 0;
-		background-color: #97A5B4;
 	
+	@mixin atMedium{
+		background-color: rgba(252, 252, 251, .3);
+	}
 
-		@mixin atMedium {
-			position: absolute;
-			top: 0;
-			background-color: #97A5B4;
-			padding: 25px 36px;
-
-
-		}
-
+	&__logo__graphic {
+		text-indent: -9999px;
 	}
 
 	&__text {
@@ -36,6 +25,16 @@
 			color: $textColor;
 			text-shadow: 3px 3px 0 rgba(255, 255, 255, .5);
 
+		}
+	}
+
+	&__menu-content {
+		display: none;
+		
+
+
+		@mixin atMedium {
+			display: block;
 		}
 	}
 }
