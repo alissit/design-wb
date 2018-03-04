@@ -1,3 +1,12 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 
 html {
   line-height: 1.15; /* 1 */
@@ -335,7 +344,7 @@ template {
 body {
 
 	font-family: 'Alegreya Sans', sans-serif;
-	background-color: white;
+	background-color: #cbc3c3;
 	margin: 0 auto;
 }
 
@@ -393,12 +402,17 @@ img {
 	padding: 4.5rem 0;
 }
 
+#secondary-section {
+	background: white;
+}
+
 .site-header {
 
 	padding: 10px 0;
 	position: absolute;
 	width: 100%;
 	z-index: 2;
+	background-color: rgba(94, 94, 94, .5);
 	transition: background-color .3s ease-out;
 
 }
@@ -410,7 +424,7 @@ img {
 @media (min-width: 800px){
 
 .site-header {
-		background-color: rgba(252, 252, 251, .3)
+		background-color: rgba(94, 94, 94, .3)
 
 }
 	}
@@ -598,10 +612,10 @@ img {
 		text-decoration: none;
 		font-weight: 400;
 		font-size: 1.5rem;
-		max-width: 100px;
+		max-width: 200px;
 		margin-top: 8px;
 		display: block;
-		padding: 3px 12px;
+		padding: 5px 12px;
 		background-color: rgba(94, 94, 94, .4);
 		border-radius: 5px;
 	}
@@ -733,6 +747,16 @@ img {
 
 .headline--centered {
 		text-align: center;
+	}
+
+.headline--contact-page {
+		min-height: 300px;
+
+	}
+
+.headline--lowered {
+		padding-top: 140px;
+		
 	}
 
 .headline--small {
