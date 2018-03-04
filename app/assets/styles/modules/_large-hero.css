@@ -8,9 +8,9 @@
 	}
 
 	&__text-content {
-		padding-top: 60px;
+		padding-top: 20px;
 		position: absolute;
-		top: 30%;
+		top: 20%;
 		transform: translateY(-50%);
 		left: 0;
 		width: 100%;
