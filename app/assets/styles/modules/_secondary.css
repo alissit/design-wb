@@ -1,7 +1,11 @@
 .secondary {
 
 	background-color: rgb(252, 252, 251);
-	height: 100px;
+	height: 150px;
+
+	@mixin atSmall{
+		height: 200px;
+	}
 
 
 	&__description {
