@@ -1,5 +1,14 @@
 .page-section {
 	padding: 4.5rem 0;
+
+	&__contact-page {
+
+		padding: 4.5rem 0;
+
+		@mixin atMedium {
+			padding: 5.2rem 0;
+		}
+	}
 }
 
 #secondary-section {

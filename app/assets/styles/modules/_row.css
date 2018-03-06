@@ -1,0 +1,36 @@
+.row {
+
+
+
+	@mixin clearfix;
+
+	&__medium-6-image {
+
+		@mixin atMedium{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 18px;
+	}
+	}
+
+
+	@mixin atMedium {
+
+	&--gutters > div {
+		padding-right: 15px;
+	}
+
+	&__medium-6-image {
+
+		float: left;
+		width: 50%;
+
+	}
+
+	&__medium-6-text {
+		float: left;
+		width: 50%;
+	}
+
+	}
+}

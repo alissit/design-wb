@@ -14,7 +14,7 @@ gulp.task("watch", function(){
 		}
 	});
 
-	watch("./app/temp/contact1.html", function(){
+	watch("./app/html/*.html", function(){
 		browserSync.reload();
 	});
 
