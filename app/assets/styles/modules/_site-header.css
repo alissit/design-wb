@@ -1,5 +1,6 @@
 .site-header {
 
+	overflow: hidden;
 	padding: 10px 0;
 	position: absolute;
 	width: 100%;
@@ -12,6 +13,11 @@
 	
 	@mixin atMedium{
 		background-color: rgba(94, 94, 94, .3);
+		position: fixed;
+
+		&--dark {
+			background-color: rgba(23, 51, 72, 1);
+		}
 	}
 
 	&__logo__graphic {

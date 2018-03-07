@@ -1,0 +1,151 @@
+.quotes {
+		background-color: rgba(151, 150, 153, .6);
+		position: relative;
+		padding-top: 25px;
+		min-height: auto;
+		padding-bottom: 30px;
+
+		@mixin atMedium {
+			padding-bottom: 25px;
+		}
+
+
+	&__text {
+
+		&-title {
+			padding-top: 10px;
+			font-size: 2.1rem;
+			font-weight: 300;
+			text-align: center;
+			margin-top: 10px;
+			text-align: center;
+
+	    	@mixin atSmall {
+	    		font-size: 2.8rem;
+	   		}
+
+	   		 @mixin atMedium {
+				padding-top: 10px;
+				font-size: 4rem;
+				font-weight: 400;
+				padding-bottom: 0px;
+
+	    	}
+
+	   		@mixin atLarge {
+				padding-top: 40px;
+				font-size: 5.2rem;
+				font-weight: 400;
+				padding-bottom: 40px;
+
+	    	}
+
+		}
+
+	}
+
+
+	&__testimonial {
+
+		  blockquote {
+		    margin: 10px 10px 0;
+		    background: $backgroundColor;
+		    padding: 20px 60px;
+		    position: relative;
+		    border: none;
+		    border-radius: 8px;
+		    font-style: italic;
+		    max-width: 200px;
+		    font-size: .8rem;
+
+	    @mixin atSmall {
+
+
+	    }
+
+	    @mixin atMedium {
+	    	margin: 10px 10px 0;
+		    padding: 20px 60px;
+		    max-width: 400px;
+	    	font-size: 1.2rem;
+
+	    }
+
+	    @mixin atLarge {
+	    	font-size: 1.8rem;
+
+	    }
+
+
+    &::before {
+        top: 0;
+        left: 10px;
+        content: "\201C";
+        position: absolute;
+        font-size: 80px;
+        line-height: 1;
+        color: #757f9a;
+        font-style: normal;
+    }
+
+    &::after {
+        content: "\201D";
+        right: 10px;
+        bottom: -0.5em;
+        content: "\201C";
+        position: absolute;
+        font-size: 80px;
+        line-height: 1;
+        color: #757f9a;
+        font-style: normal;
+    }
+  }
+
+  div {
+      width: 0;
+      height: 0;
+      border-left: 0 solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #efefef;
+      margin: 0 0 0 140px;
+
+      @mixin atSmall {
+      	margin: 0 0 0 320px;
+      }
+
+      @mixin atMedium {
+      	margin: 0 0 0 120px;
+      }
+
+      @mixin atLarge {
+      	margin: 0 0 0 300px;
+      }
+  }
+
+  p {
+      margin: 20px 0 0 50px;
+      text-align: left;
+      color: $textColor;
+	  font-size: .8rem;
+	  padding-bottom: 1rem;
+	  	@mixin atSmall {
+
+	  		margin-left: 160px;
+	    }
+
+	    @mixin atMedium {
+	    	margin-left: 60px;
+	    	font-size: 1.2rem;
+
+	    }
+
+	    @mixin atLarge {
+	    	margin-left: 30px;
+	    	font-size: 1.5rem;
+	    	
+	    }
+
+    }
+
+	}
+}

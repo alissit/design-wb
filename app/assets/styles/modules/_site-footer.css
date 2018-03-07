@@ -1,5 +1,6 @@
 .site-footer {
 
+	clear: both;
 	background-color: $backgroundColor;
 	color: $textColor;
 	padding: .5rem 0;

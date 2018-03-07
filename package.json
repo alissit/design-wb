@@ -11,7 +11,9 @@
   "description": "",
   "dependencies": {
     "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
