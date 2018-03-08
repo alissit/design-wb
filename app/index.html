@@ -27,16 +27,16 @@
   			</div>
 		    <nav class="primary-nav primary-nav--pull-right">
 		      <ul>
-		        <li><a href="index.html">Home</a></li>
+		        <li><a href="index.html" id="home-link">Home</a></li>
 		        <li><a href="html/projects.html">Projects</a></li>
 		        <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
-		        <li><a href="html/contact.html">Contact</a></li>
+		        <li><a href="#contact" id="contact-link">Contact</a></li>
 		      </ul>
 		    </nav>
   		</div>
   </header>
 
-	<div class ="large-hero">
+	<div class ="large-hero" data-matching-link="#home-link">
 			    <picture>
 				      <source srcset="assets/images/yellow-chairs-2560.jpg 2560w" media="(min-width: 1200px)">
 
@@ -67,7 +67,7 @@
 </div>
 
 
-    <div id="testimonials" id="content" class="page-section--testimonials" data-matching-link="#testimonials-link">
+    <div id="testimonials" id="content" class="page-section page-section--testimonials" data-matching-link="#testimonials-link">
     	<div class="row quotes">
 		    		<h2 class="quotes__text-title">What our Clients say ...</h2>
 		    			
@@ -113,6 +113,55 @@
 				     	</div>
 	</div>
 
+
+	  <div id="contact" class ="page-section contact-page page-section__contact-page" data-matching-link="#contact-link">
+		    <div class="contact-page__middle">
+		      	<div class="row row--gutters">
+		        	<div class="row__medium-6-image contact-page-image">
+		          		<img src="../../assets/images/contact-desk.jpg">
+		        	</div>
+		        	<div class="row__medium-6-text">
+		          		<div class="contact-page__text">
+				              <h1 class="contact-page__text-title">Contact Me</h1>
+				              <h2 class="contact-page__text-subtitle">Would you like to book an appointment for a free intitial design consultation?</h2>
+
+				              <h2 class="contact-page__text-name">Renata Norquoy</h2>
+				              <h2 class="contact-page__text-email">email:</h2>
+				                <h2 class="contact-page__text-email2">
+				                  rnorquoy@yahoo.com
+				                </h2>
+				              <h2 class="contact-page__text-phone">phone:</h2>
+				                  <div class="contact-page__text-phone2">
+				                    <a href="tel:+44-208-646-9562">0208-646-9562</a>
+				                  </div>
+				              <h2 class="contact-page__text-subtitle2">Alternatively, Please fill in the contact form below and we will be in touch soon.</h2>
+
+		          		</div>
+		        	</div>
+		      	</div>
+		      	<div class="wrapper forms">
+						<form class="forms" action="http://formspree.io/your@email.com" method="POST">
+
+						    <div class="forms forms-title">Name:</div>
+						    <input type="text" name="name" placeholder="Enter your name" class="forms-field">
+
+						    <div class="forms forms-title">Email:</div>
+						    <input type="email" name="_replyto" placeholder="Enter your email" class="forms-field">
+
+						    <div class="forms-title">Message:</div>
+						    <textarea name="message" rows="10" placeholder="Enter your message" class="forms forms-field forms-message"></textarea>
+
+						    <input type="hidden" name="_subject" value="Website contact" />
+						    <input type="hidden" name="_next" value="//www.arthurgareginyan.com/thanks.html" />
+						    <input type="text" name="_gotcha" style="display:none">
+
+						    <div class="forms__buttons-container">
+						       <input type="submit" value="Send" class="forms__buttons">
+						    </div>
+						</form>
+				</div>
+		    </div>
+  		</div>
 
   <footer class="site-footer">
   	<div class="wrapper">

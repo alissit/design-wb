@@ -28,7 +28,7 @@
 	}
 
 	&__title {
-		font-weight: 400;
+		font-weight: 500;
 		color: $textColor;
 		font-size: 3.2rem;
 		margin: 0;
