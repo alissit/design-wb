@@ -3,7 +3,70 @@
 	@mixin clearfix;
 
 
-	&__medium-3 {
+	&__6 {
+
+		@mixin atMedium {
+			float: left;
+			width: 50%;
+			padding-right: 20px;
+		    padding-bottom: 20px;
+		    border-top-width: 20px;
+				}
+
+	}
+
+	&__9 {
+
+		@mixin atMedium {
+		float: left;
+		width: 75%;
+			padding-right: 20px;
+		    padding-bottom: 20px;
+		    border-top-width: 20px;
+		}
+	}
+
+	&__3 {
+
+		@mixin atMedium {
+			float: left;
+			width: 25%;
+			padding-right: 20px;
+		    padding-bottom: 20px;
+		    border-top-width: 20px;
+		}
+	}
+
+	&__8{
+
+		@mixin atMedium {
+			float: left;
+			width: 66%;
+			padding-right: 20px;
+		    padding-bottom: 20px;
+		    border-top-width: 20px;
+
+		}
+
+	}
+
+	&__4 {
+
+		@mixin atMedium {
+			float: left;
+			width: 33%;
+			padding-right: 20px;
+			padding-bottom: 20px;
+		    border-top-width: 20px;
+		    max-height: 384px;
+
+		}
+
+	}
+
+
+
+	&__medium-4 {
 
 
 		@mixin atMedium{

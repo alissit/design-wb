@@ -1,0 +1,7 @@
+.projects {
+
+	position: relative;
+	border-bottom: 10px solid $textColor;
+	display: block;
+
+}
