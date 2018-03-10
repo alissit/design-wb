@@ -14,13 +14,14 @@
 
 	&--testimonials {
 		border-bottom: 10px solid $textColor;
+
+		&.lazyloaded {
 		background-image: url("../../assets/images/testimonial 1200.jpg");
 		background-repeat: no-repeat;
-		background-clip: border-box;
 		background-size: cover;
 		position: relative;
 		height: auto;
-		padding-bottom: 0px;
+		}
 	}
 }
 

@@ -4,12 +4,25 @@ import waypoints from "../../../../node_modules/waypoints/lib/noframework.waypoi
 class StickyHeader {
 
 	constructor(){
+		this.lazyImages = $(".lazyload");
 		this.siteHeader = $(".site-header");
 		this.headerTriggerElement = $(".large-hero__title");
 		this.createHeaderWayppoint();
 		this.pageSections = $(".page-section");
 		this.headerLink = $(".primary-nav a")
 		this.createPageSectionWaypoints();
+		this.addSmoothScrolling();
+		this.refreshWayPoints();
+	}
+
+	refreshWayPoints() {
+		this.lazyImages.on("load", function(){
+			Waypoint.refreshAll();
+		})
+	}
+
+	addSmoothScrolling() {
+		this.headerLInks.smoothScroll();
 	}
 
 	createHeaderWayppoint(){
