@@ -490,12 +490,6 @@ img {
 
 .wrapper {
 
-	display: grid;
-	grid-gap: 20px;
-	grid-template-areas:
-		"top"
-		"bottom";
-
 	padding-left: 18px;
 	padding-right: 18px;
 	max-width: 1200px;
@@ -1581,4 +1575,19 @@ img {
 .services--lg-lowered {
 			margin-top: 20px
 	}
+	}
+
+.reveal-item {
+
+	opacity: 0;
+	transition: all 1s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
 	}

@@ -1,11 +1,5 @@
 .wrapper {
 
-	display: grid;
-	grid-gap: 20px;
-	grid-template-areas:
-		"top"
-		"bottom";
-
 	padding-left: 18px;
 	padding-right: 18px;
 	max-width: 1200px;
