@@ -13,12 +13,14 @@
 	&__text {
 
 		&-title {
+			color: #F7F7F6;
 			padding-top: 10px;
 			font-size: 2.1rem;
 			font-weight: 300;
 			text-align: center;
 			margin-top: 10px;
 			text-align: center;
+			text-shadow: 2px 2px 0 rgba(0, 0, 0, .8);
 
 	    	@mixin atSmall {
 	    		font-size: 2.8rem;
@@ -49,7 +51,7 @@
 
 		  blockquote {
 		    margin: 10px 10px 0;
-		    background: $backgroundColor;
+		    background: #F1F0EA;
 		    padding: 20px 60px;
 		    position: relative;
 		    border: none;
@@ -125,9 +127,10 @@
   p {
       margin: 20px 0 0 50px;
       text-align: left;
-      color: $textColor;
+      color: #F1F0EA;
 	  font-size: .8rem;
 	  padding-bottom: 1rem;
+	  text-shadow: 1px 1px 0 rgba(0, 0, 0, .8);
 	  	@mixin atSmall {
 
 	  		margin-left: 160px;

@@ -29,7 +29,7 @@
 		      <ul>
 		        <li><a href="index.html" id="home-link">Home</a></li>
 		        <li><a href="html/projects.html">Projects</a></li>
-		        <li><a href="#me" id="me-link">About</a></li>
+		        <li><a href="#about" id="about-link">About</a></li>
 		        <li><a href="#services" id="services-link">Services</a></li>
 		        <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
 		        <li><a href="#contact" id="contact-link">Contact</a></li>
@@ -38,7 +38,7 @@
   		</div>
   </header>
 
-	<div class ="large-hero" data-matching-link="#home-link">
+	<div id="home" class ="large-hero" data-matching-link="#home-link">
 			    <picture>
 				      <source srcset="assets/images/yellow-chairs-2560.jpg 2560w" media="(min-width: 1200px)">
 
@@ -61,10 +61,55 @@
 
 
 
-<div id="secondary-section" class="page-section"  data-matching-link="#me-link">
+<div id="about" class="page-section secondary"  data-matching-link="#about-link">
 	<div class="wrapper">
-		<h2 class="headline headline--centered headline--b-margin-small">Santuary. Belonging. Harmony.</h2>
-		<p class="headline headline-- centered headline--small headline--narrow headline--b-margin-large">Let me help you create your unique style using <strong>colours, patterns, textures and forms.</strong></p>
+		<h2 class="secondary--title secondary--centered secondary--b-margin-small">Santuary. Belonging. Harmony.</h2>
+		<p class="secondary--subtitle secondary--centered secondary--b-margin-large">Let me help you create your unique style using <strong>colours, patterns, textures and forms.</strong></p>
+
+		<h4 class="secondary__text">I believe that home should be a sanctuary for the soul. My aim is to create spaces with a sense of belonging and harmony; a place that tells your story.. Any design project can be daunting and naturally we would like to get things right. I can help you with this process, making it as stress free as possible, and turning it into an exciting adventure of creating your unique style using colours, patterns, textures and forms.</h4>
+
+		<h4 class="secondary__text"><strong>About Me:</strong>  Before my interior design consultancy I had a  successful career in the insurance industry.  However I have always been fascinated and drawn to all different forms of art and visual aesthetics.  This helped me to realise that my passion is to create beautiful spaces for people.  I decided to follow my dream and gained professional qualifications in interior design which I completed with 1st Class BA (Hons) Degree. </h4>
+	</div>
+</div>
+
+<div id="services" class="services page-section"  data-matching-link="#services-link">
+	<div class="wrapper">
+		<div >
+			<h1 class="services--title">Services</h1>
+			<h2 class="services--subtitle">For more information regarding an informal design visit, Please fill in the contact form below and we will be in touch soon.</h2>
+		</div>
+		<div class="row">
+			<div class="row__6">
+				<div class="wrapper forms services--lg-lowered">
+						<form class="forms forms--order1" action="http://formspree.io/your@email.com" method="POST">
+
+						    <div class="forms forms-title">Name:</div>
+						    <input type="text" name="name" placeholder="Enter your name" class="forms-field">
+
+						    <div class="forms forms-title">Email:</div>
+						    <input type="email" name="_replyto" placeholder="Enter your email" class="forms-field">
+
+						    <div class="forms-title">Message:</div>
+						    <textarea name="message" rows="10" placeholder="Enter your message" class="forms forms-field forms-message"></textarea>
+
+						    <input type="hidden" name="_subject" value="Website contact" />
+						    <input type="hidden" name="_next" value="//www.arthurgareginyan.com/thanks.html" />
+						    <input type="text" name="_gotcha" style="display:none">
+
+						    <div class="forms__buttons-container">
+						       <input type="submit" value="Send" class="forms__buttons">
+						    </div>
+						</form>
+				</div>
+			</div>
+			<div class="row__6 forms--order2">
+				<h4 class="services--description"><strong>Initial Consultation:</strong> It is our first informal meeting to chat about what you would like to achieve. It is about listening and interpreting your ideas in order to develop the design brief. I will also answer any question you may have about my services, timescale and fees.  Our initial meeting is free of charge. </h4>
+				<h4 class="services--description"><strong>Design  Concept:</strong> I will proceed with a survey or acquire all relevant drawings in order to develop the concept design. This includes spatial planning, colour schemes and creation of visuals, mood boards and samples to showcase the proposal. Once the concept design concept is agreed we can put the plan into motion. </h4>
+				<h4 class="services--description"><strong>Technical Drawings: </strong> If building alterations have been agreed I will produce detailed technical drawings for the purpose of pricing by constructors and for the planning authority. </h4>
+				<h4 class="services--description"><strong>Project co-ordination: </strong> I will meet regularly with the client and any contractors to oversee that the project is progressing according to plan until completion and hand over to the client. </h4>
+
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -116,54 +161,32 @@
 	</div>
 
 
-	  <div id="contact" class ="page-section contact-page page-section__contact-page" data-matching-link="#contact-link">
-		    <div class="contact-page__middle">
-		      	<div class="row row--gutters">
-		        	<div class="row__medium-6-image contact-page-image">
-		          		<img src="../../assets/images/contact-desk.jpg">
-		        	</div>
-		        	<div class="row__medium-6-text">
-		          		<div class="contact-page__text">
-				              <h1 class="contact-page__text-title">Contact Me</h1>
-				              <h2 class="contact-page__text-subtitle">Would you like to book an appointment for a free intitial design consultation?</h2>
+	<div id="contact" class ="page-section contact-page page-section__contact-page" data-matching-link="#contact-link">
+		<div class="contact-page__middle">
+		    <div class="row row--gutters">
+		        <div class="row__medium-6-image contact-page-image">
+		          	<img src="../../assets/images/contact-desk.jpg">
+		        </div>
+		        <div class="row__medium-6-text">
+		          	<div class="contact-page__text">
+				        <h1 class="contact-page__text-title">Contact Me</h1>
+				        <h2 class="contact-page__text-subtitle">Would you like to book an appointment for a free intitial design consultation?</h2>
 
-				              <h2 class="contact-page__text-name">Renata Norquoy</h2>
-				              <h2 class="contact-page__text-email">email:</h2>
-				                <h2 class="contact-page__text-email2">
+				        <h2 class="contact-page__text-name">Renata Norquoy</h2>
+				        <h2 class="contact-page__text-email">email:</h2>
+				        <h2 class="contact-page__text-email2">
 				                  rnorquoy@yahoo.com
-				                </h2>
-				              <h2 class="contact-page__text-phone">phone:</h2>
-				                  <div class="contact-page__text-phone2">
-				                    <a href="tel:+44-208-646-9562">0208-646-9562</a>
-				                  </div>
-				              <h2 class="contact-page__text-subtitle2">Alternatively, Please fill in the contact form below and we will be in touch soon.</h2>
+				        </h2>
+				        <h2 class="contact-page__text-phone">phone:</h2>
+				        <div class="contact-page__text-phone2">
+				            <a href="tel:+44-208-646-9562">0208-646-9562</a>
+				        </div>
 
-		          		</div>
-		        	</div>
-		      	</div>
-		      	<div class="wrapper forms">
-						<form class="forms" action="http://formspree.io/your@email.com" method="POST">
-
-						    <div class="forms forms-title">Name:</div>
-						    <input type="text" name="name" placeholder="Enter your name" class="forms-field">
-
-						    <div class="forms forms-title">Email:</div>
-						    <input type="email" name="_replyto" placeholder="Enter your email" class="forms-field">
-
-						    <div class="forms-title">Message:</div>
-						    <textarea name="message" rows="10" placeholder="Enter your message" class="forms forms-field forms-message"></textarea>
-
-						    <input type="hidden" name="_subject" value="Website contact" />
-						    <input type="hidden" name="_next" value="//www.arthurgareginyan.com/thanks.html" />
-						    <input type="text" name="_gotcha" style="display:none">
-
-						    <div class="forms__buttons-container">
-						       <input type="submit" value="Send" class="forms__buttons">
-						    </div>
-						</form>
-				</div>
+		          	</div>
+		        </div>
 		    </div>
-  		</div>
+		</div>
+  	</div>
 
   <footer class="site-footer">
   	<div class="wrapper">

@@ -10569,7 +10569,7 @@ var StickyHeader = function () {
 						that.headerLink.removeClass("is-current-link");
 						(0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
 					},
-					offset: "18%"
+					offset: "9%"
 				});
 			});
 		}

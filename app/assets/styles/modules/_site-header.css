@@ -16,7 +16,7 @@
 		position: fixed;
 
 		&--dark {
-			background-color: rgba(23, 51, 72, 1);
+			background-color: rgba(94, 94, 94, 1);
 		}
 	}
 

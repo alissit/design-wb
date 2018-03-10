@@ -1,8 +1,20 @@
 .wrapper {
 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"top"
+		"bottom";
+
 	padding-left: 18px;
 	padding-right: 18px;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@mixin atXLarge {
+
+		max-width: 1800px;
+	}
+
 }

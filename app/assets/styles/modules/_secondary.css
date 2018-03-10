@@ -1,32 +1,107 @@
 .secondary {
 
-	background-color: rgb(252, 252, 251);
-	height: 150px;
+	&--title {
 
-	@mixin atSmall{
-		height: 200px;
-	}
-
-
-	&__description {
-			font-weight: 300;
-			font-size: 2.3rem;
-			text-align: center;
-			margin-top: 0;
-
-
+		font-size: 2.2rem;
+		font-weight: 300;
+		color: green;
 
 		@mixin atMedium {
+
+			font-size: 2.5rem;
 			font-weight: 400;
-			font-size: 3.5rem;
-			letter-spacing: 3px;
+		}
+
+		@mixin atLarge {
+			font-size: 3.2rem;
+			font-weight: 400;
+		}
+
+		@mixin atXLarge {
+			font-size: 4.5rem;
 
 		}
 	}
 
-	&__paragraph {
+	&--subtitle {
+		font-size: 1.4rem;
+
+		@mixin atMedium {
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: 300;
+			font-size: 1.9rem;
+		}
+
+		@mixin atLarge {
+			max-width: 1200px;
+			font-weight: 400;
+			font-size: 2.3rem;
+		}
+
+		@mixin atXLarge {
+			font-size: 3.2rem;
+			max-width: 1800px;
+			
+		}
+
+	}
+
+
+
+
+	&__text {
 
 		font-weight: 300;
-		font-size: 1.4rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		@mixin atMedium {
+			font-weight: 300;
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+		@mixin atLarge {
+			font-weight: 400;
+			font-size: 1.4rem;
+			max-width: 1200px;
+		}
+
+		@mixin atXLarge {
+			font-size: 1.9rem;
+			max-width: 1800px;
+			
+		}
+	}		
+
+	&--lowered {
+		padding-top: 140px;
+		
 	}
+
+
+
+	strong {
+		font-weight: 500;
+	}
+
+	&--centered {
+		text-align: center;
+	}
+
+
+	&--b-margin-small {
+
+		margin-bottom: .5em;
+	}
+
+	&--b-margin-large {
+		
+		margin-bottom: 1.6em;
+	}
+
 }
