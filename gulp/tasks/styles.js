@@ -9,6 +9,7 @@ var gulp 			= require("gulp"),
 
 
 gulp.task("styles", function(){
+	console.log("styles started ...")
 	gulp.src("./app/assets/styles/styles.css")
 		.pipe(postcss([cssImport, mixins, nested, cssvars, autoprefixer]))
 		.on("error", function(errorInfo){
