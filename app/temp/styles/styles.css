@@ -533,7 +533,7 @@ img {
 	}
 
 .page-section--testimonials.lazyloaded {
-		background-image: url("../../assets/images/testimonial 1200.jpg");
+		background-image: url("../../../assets/images/testimonial 1200.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
