@@ -507,6 +507,10 @@ img {
 }
 	}
 
+.wrapper--narrow {
+		max-width: 470px;
+	}
+
 .page-section {
 	padding: 4.5rem 0;
 	overflow: hidden;
@@ -935,6 +939,14 @@ img {
 		margin-top: 80px
 	}
 	}
+
+.contact-page__middle-narrow {
+		background-color: rgba(94, 94, 94, .15);
+		max-width: 500px;
+
+		margin-left: auto;
+		margin-right: auto;
+		}
 
 .contact-page__text {
 
@@ -1590,4 +1602,144 @@ img {
 		-webkit-transform: scale(1);
 		        transform: scale(1);
 
+	}
+
+.modal {
+	position: fixed;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 1);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	transition: all .3s ease-out;
+
+}
+
+.modal--is-visible {
+		opacity: 1;
+		visibility: visible;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
+	}
+
+.modal__inner {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+	}
+
+.modal__text-title {
+		font-weight: 400;
+		color: #171E22;
+		font-size: 3.7rem;
+		text-align: center;
+		text-shadow: 2px 2px 0 rgba(255, 255, 255, .8);
+
+
+	}
+
+.modal__description {
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 300;
+		line-height: 1.65;
+	}
+
+@media (min-width: 780px){
+
+.modal__description {
+			font-size: 1.5rem
+	}
+	}
+
+.modal-info {
+		text-align: center;
+	}
+
+.modal__close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 2rem;
+		-webkit-transform: scaleX(1.2);
+		        transform: scaleX(1.2);
+		-webkit-transform-origin: 100% 0;
+		        transform-origin: 100% 0;
+		color: #171E22;
+		cursor: pointer;
+	}
+
+.modal__close:hover {
+			color: orange;
+		}
+
+.modal-text-name {
+		padding-top: 30px;
+		text-align: center;
+		font-weight: 400;
+		font-weight: 1.1rem;
+		text-transform: uppercase;
+		}
+
+@media (min-width: 530px){
+
+.modal-text-name {
+		font-size: 1.3rem
+		}
+	}
+
+.modal-text-email {
+		text-align: center;
+		font-size: 1.1rem;
+		font-weight: 300;
+		margin-bottom: 0px;
+}
+
+@media (min-width: 530px){
+
+.modal-text-email {
+		font-size: 1.3rem
+}
+	}
+
+.modal-text-email2 {
+		text-align: center;
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin-top: 0px;
+	}
+
+@media (min-width: 530px){
+
+.modal-text-email2 {
+			font-size: 1.3rem
+	}
+	}
+
+.modal-text-phone2 {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+.modal-text-phone {
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.3rem;
+		margin-bottom: 0px;
+
+	}
+
+.modal a {
+		color: #171E22;
+		text-decoration: none;
+		font-weight: 400;
+		font-size: 1.4rem;
 	}
